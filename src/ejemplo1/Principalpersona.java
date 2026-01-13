@@ -1,19 +1,22 @@
 package ejemplo1;
 
+import java.util.Scanner;
+
 public class Principalpersona {
 
 	public static void main (String[] args) {
-		Persona daniel = new Persona();
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println(daniel);
-		System.out.println(daniel.nombre);
-		daniel.nombre = "Daniel";
-		System.out.println(daniel.nombre);
-		System.out.println(daniel.edad);
-		System.out.println(daniel.estatura);
-		System.out.println(daniel.carnet);
-		daniel.genero = "Mujer";
-		System.out.println(daniel.genero);
+		System.out.println("Introduce la edad: ");
+		
+		int edad = sc.nextInt();
+		
+		
+		Persona personaPrueba = new Persona("Daniel", edad, 1.74);
+			
+		System.out.println(personaPrueba.edad);
+		
+		sc.close();
 		
 //		Persona p1 = new Persona();
 //		Persona p2 = new Persona();
