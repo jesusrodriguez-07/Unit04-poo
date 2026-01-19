@@ -21,7 +21,7 @@ public class Pizza {
 		MEDIANA, FAMILIAR
 	}
 	public enum TipoPizza {
-		MARGARITA, BARBACOA, CUATRO_QUESOS, HAWAIANA
+		MARGARITA, BARBACOA, CUATRO_QUESOS, CARBONARA, PEPPERONI 
 	}
 	public enum EstadoPizza {
 		PEDIDA, SERVIDA
